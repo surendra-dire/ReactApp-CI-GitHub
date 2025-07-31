@@ -1,10 +1,8 @@
 # Build and Push React App Docker Image
 
 name: Build and Push React App Docker Image
-on:
-  push:
-    branches:
-      - main   
+on: 
+ workflow_call:
 
 jobs:
   build-and-push:
