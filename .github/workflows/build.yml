@@ -36,7 +36,7 @@ jobs:
       - name: Push Docker image
         run: docker push ${{ secrets.DOCKER_USERNAME }}/react-app:${{ github.sha }}
 
-      - name: Checkout GitOps repo [ReactApp-ArgoCD-Part-1-Simple]
+      - name: Checkout GitOps repo [argocd-configs-bluegreen]
         uses: actions/checkout@v3
         with:
           repository: surendra-dire/argocd-configs-bluegreen
@@ -44,7 +44,7 @@ jobs:
           path: action-runners-local-repo
           ref: main
 
-      - name: Update last-deployed.txt and deployment
+      - name: Update last-deployed.txt and deployment.yml
         run: |
           cd action-runners-local-repo/ReactApp-Manifests
           CURRENT=$(cat last-deployed.txt)
