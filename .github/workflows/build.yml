@@ -46,7 +46,7 @@ jobs:
 
       - name: Update last-deployed.txt and deployment
         run: |
-          cd config-repo
+          cd action-runners-local-repo
 
           CURRENT=$(cat last-deployed.txt)
           NEXT="green"
