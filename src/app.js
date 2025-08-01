@@ -5,7 +5,7 @@ function App() {
   return (
     <div style={{ textAlign: "center", marginTop: "20%" }}>
       <h1 style={{ fontSize: "48px", color: "#2e3b4e" }}>
-        🌊 This is the <strong>Green v1.0</strong> version!
+        🌊 This is the <strong> I am checkig this is Green or blue deployment</strong> version!
       </h1>
     </div>
   );
