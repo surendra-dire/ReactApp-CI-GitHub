@@ -2,7 +2,8 @@
 
 name: Build and Push React App Docker Image
 on: 
- workflow_call:
+  workflow_dispatch:  # Allows manual runs via the GitHub UI
+  workflow_call:      # Keeps it callable by other workflows if needed
 
 jobs:
   build-and-push:
