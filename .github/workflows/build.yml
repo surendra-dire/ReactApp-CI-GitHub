@@ -39,15 +39,14 @@ jobs:
       - name: Checkout GitOps repo [ReactApp-ArgoCD-Part-1-Simple]
         uses: actions/checkout@v3
         with:
-          repository: surendra-dire/ReactApp-ArgoCD-Part-1-Simple
+          repository: surendra-dire/argocd-configs-bluegreen
           token: ${{ secrets.GIIOPS_REPO_TOKEN }}
           path: action-runners-local-repo
           ref: main
 
       - name: Update last-deployed.txt and deployment
         run: |
-          cd action-runners-local-repo
-
+          cd action-runners-local-repo/ReactApp-Manifests
           CURRENT=$(cat last-deployed.txt)
           NEXT="green"
           if [ "$CURRENT" == "green" ]; then NEXT="blue"; fi
