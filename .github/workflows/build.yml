@@ -39,7 +39,7 @@ jobs:
       - name: Checkout GitOps repo [ReactApp-ArgoCD-Part-1-Simple]
         uses: actions/checkout@v3
         with:
-          repository: demo-new-organization/ReactApp-ArgoCD-Part-1-Simple
+          repository: surendra-dire/ReactApp-ArgoCD-Part-1-Simple
           token: ${{ secrets.GIIOPS_REPO_TOKEN }}
           path: action-runners-local-repo
           ref: main
