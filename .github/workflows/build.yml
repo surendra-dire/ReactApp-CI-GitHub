@@ -42,6 +42,7 @@ jobs:
           repository: demo-new-organization/ReactApp-ArgoCD-Part-1-Simple
           token: ${{ secrets.GIIOPS_REPO_TOKEN }}
           path: action-runners-local-repo
+          ref: main
 
       - name: Update last-deployed.txt and deployment
         run: |
