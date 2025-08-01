@@ -40,7 +40,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: demo-new-organization/ReactApp-ArgoCD-Part-1-Simple
-          token: ${{ secrets.ReactApp-ArgoCD-Part-1-Simple_REPO_PAT }}
+          token: ${{ secrets.GIIOPS_REPO_TOKEN }}
           path: action-runners-local-repo
 
       - name: Update last-deployed.txt and deployment
