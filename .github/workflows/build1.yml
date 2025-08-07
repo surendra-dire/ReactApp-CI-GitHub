@@ -46,7 +46,7 @@ jobs:
 
       - name: Update last-deployed.txt and deployment.yml
         run: |
-          cd action-runners-local-repo/ReactApp-Manifests
+          cd action-runners-local-repo/ReactApp-Manifests1
           CURRENT=$(cat last-deployed.txt)
           NEXT="green"
           if [ "$CURRENT" == "green" ]; then NEXT="blue"; fi
